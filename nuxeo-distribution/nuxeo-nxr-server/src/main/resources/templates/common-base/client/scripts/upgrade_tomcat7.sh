@@ -31,6 +31,8 @@ usage() {
   echo
   echo "Note: If no target version is specified the latest one will be retrieved from the Tomcat site"
   echo
+  echo "Warning: this script cannot be run with sudo -c. The Nuxeo user has to be logged in."
+  echo
   echo "Examples:"
   echo -e "\\t./$(basename "$0") /path/to/nuxeo-cap-7.10-tomcat"
   echo -e "\\t./$(basename "$0") /path/to/nuxeo-cap-7.10-tomcat 7.0.76"
